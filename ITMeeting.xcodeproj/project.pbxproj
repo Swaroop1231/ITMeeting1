@@ -1,0 +1,444 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B70AEFF61D0E7E8100DFD520 /* NotesListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B70AEFF51D0E7E8100DFD520 /* NotesListViewController.swift */; };
+		B70AEFF81D0E9B5600DFD520 /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B70AEFF71D0E9B5600DFD520 /* WebViewController.swift */; };
+		B70AEFFD1D0EC6AD00DFD520 /* SpeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B70AEFFC1D0EC6AD00DFD520 /* SpeedViewController.swift */; };
+		B70AEFFF1D0ECAD900DFD520 /* rsz_pie_chart_pic.png in Resources */ = {isa = PBXBuildFile; fileRef = B70AEFFE1D0ECAD900DFD520 /* rsz_pie_chart_pic.png */; };
+		B70AF0011D0ECD2100DFD520 /* CreditsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B70AF0001D0ECD2100DFD520 /* CreditsViewController.swift */; };
+		B73744831D0A94520093A137 /* Alarm Clock-27.png in Resources */ = {isa = PBXBuildFile; fileRef = B737447F1D0A94520093A137 /* Alarm Clock-27.png */; };
+		B73744841D0A94520093A137 /* Calendar-27.png in Resources */ = {isa = PBXBuildFile; fileRef = B73744801D0A94520093A137 /* Calendar-27.png */; };
+		B73744851D0A94520093A137 /* Page Overview 2-27.png in Resources */ = {isa = PBXBuildFile; fileRef = B73744811D0A94520093A137 /* Page Overview 2-27.png */; };
+		B73744861D0A94520093A137 /* Resume-27.png in Resources */ = {isa = PBXBuildFile; fileRef = B73744821D0A94520093A137 /* Resume-27.png */; };
+		B73744881D0A9C4A0093A137 /* CalenderTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B73744871D0A9C4A0093A137 /* CalenderTableViewCell.swift */; };
+		B737448A1D0A9EDA0093A137 /* Tear Off Calendar-27.png in Resources */ = {isa = PBXBuildFile; fileRef = B73744891D0A9EDA0093A137 /* Tear Off Calendar-27.png */; };
+		B737448F1D0AA79A0093A137 /* NotesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B737448E1D0AA79A0093A137 /* NotesViewController.swift */; };
+		B73744911D0ABB930093A137 /* Meeting1.png in Resources */ = {isa = PBXBuildFile; fileRef = B73744901D0ABB930093A137 /* Meeting1.png */; };
+		B73744931D0AC0920093A137 /* StudentLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B73744921D0AC0920093A137 /* StudentLoginViewController.swift */; };
+		B73744951D0AC3780093A137 /* StudentRegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B73744941D0AC3780093A137 /* StudentRegisterViewController.swift */; };
+		B73744991D0AC6EE0093A137 /* CompanyLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B73744981D0AC6EE0093A137 /* CompanyLoginViewController.swift */; };
+		B7AEE6401CFC3789007C9427 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7AEE63F1CFC3789007C9427 /* AppDelegate.swift */; };
+		B7AEE6421CFC3789007C9427 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7AEE6411CFC3789007C9427 /* ViewController.swift */; };
+		B7AEE6451CFC3789007C9427 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B7AEE6431CFC3789007C9427 /* Main.storyboard */; };
+		B7AEE6481CFC3789007C9427 /* ITMeeting.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B7AEE6461CFC3789007C9427 /* ITMeeting.xcdatamodeld */; };
+		B7AEE64A1CFC3789007C9427 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B7AEE6491CFC3789007C9427 /* Assets.xcassets */; };
+		B7AEE64D1CFC3789007C9427 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B7AEE64B1CFC3789007C9427 /* LaunchScreen.storyboard */; };
+		B7AEE6561CFC3F78007C9427 /* single.png in Resources */ = {isa = PBXBuildFile; fileRef = B7AEE6541CFC3F78007C9427 /* single.png */; };
+		B7AEE6571CFC3F78007C9427 /* group.png in Resources */ = {isa = PBXBuildFile; fileRef = B7AEE6551CFC3F78007C9427 /* group.png */; };
+		B7AEE6591CFC40D0007C9427 /* Meeting12.png in Resources */ = {isa = PBXBuildFile; fileRef = B7AEE6581CFC40D0007C9427 /* Meeting12.png */; };
+		B7AEE65B1CFC4296007C9427 /* sideMenu.png in Resources */ = {isa = PBXBuildFile; fileRef = B7AEE65A1CFC4296007C9427 /* sideMenu.png */; };
+		B7AEE65D1CFC503D007C9427 /* ProgramViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7AEE65C1CFC503D007C9427 /* ProgramViewController.swift */; };
+		B7AEE6611CFC5CF3007C9427 /* ProgramsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7AEE6601CFC5CF3007C9427 /* ProgramsTableViewCell.swift */; };
+		B7AEE6631CFC5D04007C9427 /* CompaniesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7AEE6621CFC5D04007C9427 /* CompaniesTableViewCell.swift */; };
+		B7AEE6651CFC60D7007C9427 /* Watch.png in Resources */ = {isa = PBXBuildFile; fileRef = B7AEE6641CFC60D7007C9427 /* Watch.png */; };
+		B7AEE6671CFC6118007C9427 /* backArrow.png in Resources */ = {isa = PBXBuildFile; fileRef = B7AEE6661CFC6118007C9427 /* backArrow.png */; };
+		B7AEE6691CFC634F007C9427 /* StudentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7AEE6681CFC634F007C9427 /* StudentViewController.swift */; };
+		E5EFADA31D4473600077CA37 /* collegeLogo.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = E5EFADA21D4473600077CA37 /* collegeLogo.jpeg */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		B70AEFF51D0E7E8100DFD520 /* NotesListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotesListViewController.swift; sourceTree = "<group>"; };
+		B70AEFF71D0E9B5600DFD520 /* WebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
+		B70AEFFC1D0EC6AD00DFD520 /* SpeedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpeedViewController.swift; sourceTree = "<group>"; };
+		B70AEFFE1D0ECAD900DFD520 /* rsz_pie_chart_pic.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = rsz_pie_chart_pic.png; sourceTree = "<group>"; };
+		B70AF0001D0ECD2100DFD520 /* CreditsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreditsViewController.swift; sourceTree = "<group>"; };
+		B737447F1D0A94520093A137 /* Alarm Clock-27.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Alarm Clock-27.png"; sourceTree = "<group>"; };
+		B73744801D0A94520093A137 /* Calendar-27.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Calendar-27.png"; sourceTree = "<group>"; };
+		B73744811D0A94520093A137 /* Page Overview 2-27.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Page Overview 2-27.png"; sourceTree = "<group>"; };
+		B73744821D0A94520093A137 /* Resume-27.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Resume-27.png"; sourceTree = "<group>"; };
+		B73744871D0A9C4A0093A137 /* CalenderTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalenderTableViewCell.swift; sourceTree = "<group>"; };
+		B73744891D0A9EDA0093A137 /* Tear Off Calendar-27.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Tear Off Calendar-27.png"; sourceTree = "<group>"; };
+		B737448E1D0AA79A0093A137 /* NotesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotesViewController.swift; sourceTree = "<group>"; };
+		B73744901D0ABB930093A137 /* Meeting1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Meeting1.png; sourceTree = "<group>"; };
+		B73744921D0AC0920093A137 /* StudentLoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StudentLoginViewController.swift; sourceTree = "<group>"; };
+		B73744941D0AC3780093A137 /* StudentRegisterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StudentRegisterViewController.swift; sourceTree = "<group>"; };
+		B73744981D0AC6EE0093A137 /* CompanyLoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CompanyLoginViewController.swift; sourceTree = "<group>"; };
+		B7AEE63C1CFC3789007C9427 /* ITMeeting.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ITMeeting.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B7AEE63F1CFC3789007C9427 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		B7AEE6411CFC3789007C9427 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		B7AEE6441CFC3789007C9427 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B7AEE6471CFC3789007C9427 /* ITMeeting.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ITMeeting.xcdatamodel; sourceTree = "<group>"; };
+		B7AEE6491CFC3789007C9427 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B7AEE64C1CFC3789007C9427 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		B7AEE64E1CFC3789007C9427 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B7AEE6541CFC3F78007C9427 /* single.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = single.png; sourceTree = "<group>"; };
+		B7AEE6551CFC3F78007C9427 /* group.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = group.png; sourceTree = "<group>"; };
+		B7AEE6581CFC40D0007C9427 /* Meeting12.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Meeting12.png; sourceTree = "<group>"; };
+		B7AEE65A1CFC4296007C9427 /* sideMenu.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sideMenu.png; sourceTree = "<group>"; };
+		B7AEE65C1CFC503D007C9427 /* ProgramViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProgramViewController.swift; sourceTree = "<group>"; };
+		B7AEE6601CFC5CF3007C9427 /* ProgramsTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProgramsTableViewCell.swift; sourceTree = "<group>"; };
+		B7AEE6621CFC5D04007C9427 /* CompaniesTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CompaniesTableViewCell.swift; sourceTree = "<group>"; };
+		B7AEE6641CFC60D7007C9427 /* Watch.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Watch.png; sourceTree = "<group>"; };
+		B7AEE6661CFC6118007C9427 /* backArrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = backArrow.png; sourceTree = "<group>"; };
+		B7AEE6681CFC634F007C9427 /* StudentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StudentViewController.swift; sourceTree = "<group>"; };
+		E5EFADA21D4473600077CA37 /* collegeLogo.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = collegeLogo.jpeg; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B7AEE6391CFC3789007C9427 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B737448B1D0AA6FC0093A137 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				E5EFADA21D4473600077CA37 /* collegeLogo.jpeg */,
+				B70AEFFE1D0ECAD900DFD520 /* rsz_pie_chart_pic.png */,
+				B7AEE6541CFC3F78007C9427 /* single.png */,
+				B7AEE6551CFC3F78007C9427 /* group.png */,
+				B7AEE6581CFC40D0007C9427 /* Meeting12.png */,
+				B73744901D0ABB930093A137 /* Meeting1.png */,
+				B7AEE65A1CFC4296007C9427 /* sideMenu.png */,
+				B73744891D0A9EDA0093A137 /* Tear Off Calendar-27.png */,
+				B7AEE6641CFC60D7007C9427 /* Watch.png */,
+				B7AEE6661CFC6118007C9427 /* backArrow.png */,
+				B737447F1D0A94520093A137 /* Alarm Clock-27.png */,
+				B73744801D0A94520093A137 /* Calendar-27.png */,
+				B73744811D0A94520093A137 /* Page Overview 2-27.png */,
+				B73744821D0A94520093A137 /* Resume-27.png */,
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
+		B737448C1D0AA7070093A137 /* Table Cells */ = {
+			isa = PBXGroup;
+			children = (
+				B7AEE6601CFC5CF3007C9427 /* ProgramsTableViewCell.swift */,
+				B7AEE6621CFC5D04007C9427 /* CompaniesTableViewCell.swift */,
+				B73744871D0A9C4A0093A137 /* CalenderTableViewCell.swift */,
+			);
+			name = "Table Cells";
+			sourceTree = "<group>";
+		};
+		B737448D1D0AA7270093A137 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				B7AEE63F1CFC3789007C9427 /* AppDelegate.swift */,
+				B7AEE6411CFC3789007C9427 /* ViewController.swift */,
+				B7AEE65C1CFC503D007C9427 /* ProgramViewController.swift */,
+				B7AEE6681CFC634F007C9427 /* StudentViewController.swift */,
+				B737448E1D0AA79A0093A137 /* NotesViewController.swift */,
+				B73744921D0AC0920093A137 /* StudentLoginViewController.swift */,
+				B73744941D0AC3780093A137 /* StudentRegisterViewController.swift */,
+				B73744981D0AC6EE0093A137 /* CompanyLoginViewController.swift */,
+				B70AEFF51D0E7E8100DFD520 /* NotesListViewController.swift */,
+				B70AEFF71D0E9B5600DFD520 /* WebViewController.swift */,
+				B70AEFFC1D0EC6AD00DFD520 /* SpeedViewController.swift */,
+				B70AF0001D0ECD2100DFD520 /* CreditsViewController.swift */,
+				B7AEE6431CFC3789007C9427 /* Main.storyboard */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		B7AEE6331CFC3789007C9427 = {
+			isa = PBXGroup;
+			children = (
+				B7AEE63E1CFC3789007C9427 /* ITMeeting */,
+				B7AEE63D1CFC3789007C9427 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B7AEE63D1CFC3789007C9427 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B7AEE63C1CFC3789007C9427 /* ITMeeting.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B7AEE63E1CFC3789007C9427 /* ITMeeting */ = {
+			isa = PBXGroup;
+			children = (
+				B737448D1D0AA7270093A137 /* Controllers */,
+				B737448C1D0AA7070093A137 /* Table Cells */,
+				B737448B1D0AA6FC0093A137 /* Images */,
+				B7AEE6491CFC3789007C9427 /* Assets.xcassets */,
+				B7AEE64B1CFC3789007C9427 /* LaunchScreen.storyboard */,
+				B7AEE64E1CFC3789007C9427 /* Info.plist */,
+				B7AEE6461CFC3789007C9427 /* ITMeeting.xcdatamodeld */,
+			);
+			path = ITMeeting;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B7AEE63B1CFC3789007C9427 /* ITMeeting */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B7AEE6511CFC3789007C9427 /* Build configuration list for PBXNativeTarget "ITMeeting" */;
+			buildPhases = (
+				B7AEE6381CFC3789007C9427 /* Sources */,
+				B7AEE6391CFC3789007C9427 /* Frameworks */,
+				B7AEE63A1CFC3789007C9427 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ITMeeting;
+			productName = ITMeeting;
+			productReference = B7AEE63C1CFC3789007C9427 /* ITMeeting.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B7AEE6341CFC3789007C9427 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = "Satya Swaroop";
+				TargetAttributes = {
+					B7AEE63B1CFC3789007C9427 = {
+						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = UPNNVPX3A5;
+					};
+				};
+			};
+			buildConfigurationList = B7AEE6371CFC3789007C9427 /* Build configuration list for PBXProject "ITMeeting" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B7AEE6331CFC3789007C9427;
+			productRefGroup = B7AEE63D1CFC3789007C9427 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B7AEE63B1CFC3789007C9427 /* ITMeeting */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B7AEE63A1CFC3789007C9427 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B70AEFFF1D0ECAD900DFD520 /* rsz_pie_chart_pic.png in Resources */,
+				B7AEE64D1CFC3789007C9427 /* LaunchScreen.storyboard in Resources */,
+				B73744841D0A94520093A137 /* Calendar-27.png in Resources */,
+				B7AEE6651CFC60D7007C9427 /* Watch.png in Resources */,
+				B7AEE6561CFC3F78007C9427 /* single.png in Resources */,
+				E5EFADA31D4473600077CA37 /* collegeLogo.jpeg in Resources */,
+				B7AEE64A1CFC3789007C9427 /* Assets.xcassets in Resources */,
+				B73744851D0A94520093A137 /* Page Overview 2-27.png in Resources */,
+				B7AEE65B1CFC4296007C9427 /* sideMenu.png in Resources */,
+				B7AEE6571CFC3F78007C9427 /* group.png in Resources */,
+				B737448A1D0A9EDA0093A137 /* Tear Off Calendar-27.png in Resources */,
+				B73744861D0A94520093A137 /* Resume-27.png in Resources */,
+				B7AEE6591CFC40D0007C9427 /* Meeting12.png in Resources */,
+				B7AEE6451CFC3789007C9427 /* Main.storyboard in Resources */,
+				B73744831D0A94520093A137 /* Alarm Clock-27.png in Resources */,
+				B73744911D0ABB930093A137 /* Meeting1.png in Resources */,
+				B7AEE6671CFC6118007C9427 /* backArrow.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B7AEE6381CFC3789007C9427 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B73744991D0AC6EE0093A137 /* CompanyLoginViewController.swift in Sources */,
+				B7AEE6421CFC3789007C9427 /* ViewController.swift in Sources */,
+				B7AEE65D1CFC503D007C9427 /* ProgramViewController.swift in Sources */,
+				B70AF0011D0ECD2100DFD520 /* CreditsViewController.swift in Sources */,
+				B7AEE6401CFC3789007C9427 /* AppDelegate.swift in Sources */,
+				B7AEE6631CFC5D04007C9427 /* CompaniesTableViewCell.swift in Sources */,
+				B73744951D0AC3780093A137 /* StudentRegisterViewController.swift in Sources */,
+				B70AEFFD1D0EC6AD00DFD520 /* SpeedViewController.swift in Sources */,
+				B73744931D0AC0920093A137 /* StudentLoginViewController.swift in Sources */,
+				B7AEE6481CFC3789007C9427 /* ITMeeting.xcdatamodeld in Sources */,
+				B70AEFF61D0E7E8100DFD520 /* NotesListViewController.swift in Sources */,
+				B737448F1D0AA79A0093A137 /* NotesViewController.swift in Sources */,
+				B7AEE6691CFC634F007C9427 /* StudentViewController.swift in Sources */,
+				B70AEFF81D0E9B5600DFD520 /* WebViewController.swift in Sources */,
+				B7AEE6611CFC5CF3007C9427 /* ProgramsTableViewCell.swift in Sources */,
+				B73744881D0A9C4A0093A137 /* CalenderTableViewCell.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		B7AEE6431CFC3789007C9427 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B7AEE6441CFC3789007C9427 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		B7AEE64B1CFC3789007C9427 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B7AEE64C1CFC3789007C9427 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B7AEE64F1CFC3789007C9427 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		B7AEE6501CFC3789007C9427 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B7AEE6521CFC3789007C9427 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = ITMeeting/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.qison.ITMeeting;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		B7AEE6531CFC3789007C9427 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = ITMeeting/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.qison.ITMeeting;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B7AEE6371CFC3789007C9427 /* Build configuration list for PBXProject "ITMeeting" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B7AEE64F1CFC3789007C9427 /* Debug */,
+				B7AEE6501CFC3789007C9427 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B7AEE6511CFC3789007C9427 /* Build configuration list for PBXNativeTarget "ITMeeting" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B7AEE6521CFC3789007C9427 /* Debug */,
+				B7AEE6531CFC3789007C9427 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		B7AEE6461CFC3789007C9427 /* ITMeeting.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				B7AEE6471CFC3789007C9427 /* ITMeeting.xcdatamodel */,
+			);
+			currentVersion = B7AEE6471CFC3789007C9427 /* ITMeeting.xcdatamodel */;
+			path = ITMeeting.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = B7AEE6341CFC3789007C9427 /* Project object */;
+}
