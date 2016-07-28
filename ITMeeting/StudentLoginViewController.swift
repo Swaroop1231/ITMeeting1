@@ -114,6 +114,20 @@ class StudentLoginViewController: UIViewController,UITextFieldDelegate,UIGesture
             prefs.setValue(self.nameTextField.text, forKey: "userName")
             prefs.synchronize()
         }
+        else if segue.identifier == "register"
+        {
+            
+            if let destinationVC = segue.destinationViewController as? StudentRegisterViewController
+            {
+                
+                
+                
+                destinationVC.titleStr  = "STUDENT REGISTER"
+          
+                
+                
+            }
+        }
         else
         {
             if let destinationVC = segue.destinationViewController as? ProgramViewController

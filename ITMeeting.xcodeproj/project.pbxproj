@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5218D74D1D49D0EB0006502F /* CoreDataHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5218D74C1D49D0EB0006502F /* CoreDataHelper.swift */; };
+		5218D7571D49D3EE0006502F /* CompanyDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5218D7561D49D3EE0006502F /* CompanyDetailsViewController.swift */; };
+		5218D76A1D4A060A0006502F /* CompanyDetails+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5218D7681D4A060A0006502F /* CompanyDetails+CoreDataProperties.swift */; };
+		5218D76B1D4A060A0006502F /* CompanyDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5218D7691D4A060A0006502F /* CompanyDetails.swift */; };
+		5218D76D1D4A08550006502F /* CompanyRegisterDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5218D76C1D4A08550006502F /* CompanyRegisterDetails.swift */; };
+		5218D76F1D4A08760006502F /* CompanyRegisterDetails+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5218D76E1D4A08760006502F /* CompanyRegisterDetails+CoreDataProperties.swift */; };
 		B70AEFF61D0E7E8100DFD520 /* NotesListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B70AEFF51D0E7E8100DFD520 /* NotesListViewController.swift */; };
 		B70AEFF81D0E9B5600DFD520 /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B70AEFF71D0E9B5600DFD520 /* WebViewController.swift */; };
 		B70AEFFD1D0EC6AD00DFD520 /* SpeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B70AEFFC1D0EC6AD00DFD520 /* SpeedViewController.swift */; };
@@ -43,6 +49,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5218D74C1D49D0EB0006502F /* CoreDataHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataHelper.swift; sourceTree = "<group>"; };
+		5218D7561D49D3EE0006502F /* CompanyDetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CompanyDetailsViewController.swift; sourceTree = "<group>"; };
+		5218D7681D4A060A0006502F /* CompanyDetails+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CompanyDetails+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		5218D7691D4A060A0006502F /* CompanyDetails.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CompanyDetails.swift; sourceTree = "<group>"; };
+		5218D76C1D4A08550006502F /* CompanyRegisterDetails.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CompanyRegisterDetails.swift; sourceTree = "<group>"; };
+		5218D76E1D4A08760006502F /* CompanyRegisterDetails+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CompanyRegisterDetails+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		B70AEFF51D0E7E8100DFD520 /* NotesListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotesListViewController.swift; sourceTree = "<group>"; };
 		B70AEFF71D0E9B5600DFD520 /* WebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
 		B70AEFFC1D0EC6AD00DFD520 /* SpeedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpeedViewController.swift; sourceTree = "<group>"; };
@@ -133,10 +145,12 @@
 				B73744921D0AC0920093A137 /* StudentLoginViewController.swift */,
 				B73744941D0AC3780093A137 /* StudentRegisterViewController.swift */,
 				B73744981D0AC6EE0093A137 /* CompanyLoginViewController.swift */,
+				5218D7561D49D3EE0006502F /* CompanyDetailsViewController.swift */,
 				B70AEFF51D0E7E8100DFD520 /* NotesListViewController.swift */,
 				B70AEFF71D0E9B5600DFD520 /* WebViewController.swift */,
 				B70AEFFC1D0EC6AD00DFD520 /* SpeedViewController.swift */,
 				B70AF0001D0ECD2100DFD520 /* CreditsViewController.swift */,
+				5218D74C1D49D0EB0006502F /* CoreDataHelper.swift */,
 				B7AEE6431CFC3789007C9427 /* Main.storyboard */,
 			);
 			name = Controllers;
@@ -145,6 +159,10 @@
 		B7AEE6331CFC3789007C9427 = {
 			isa = PBXGroup;
 			children = (
+				5218D7681D4A060A0006502F /* CompanyDetails+CoreDataProperties.swift */,
+				5218D7691D4A060A0006502F /* CompanyDetails.swift */,
+				5218D76C1D4A08550006502F /* CompanyRegisterDetails.swift */,
+				5218D76E1D4A08760006502F /* CompanyRegisterDetails+CoreDataProperties.swift */,
 				B7AEE63E1CFC3789007C9427 /* ITMeeting */,
 				B7AEE63D1CFC3789007C9427 /* Products */,
 			);
@@ -258,12 +276,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5218D76B1D4A060A0006502F /* CompanyDetails.swift in Sources */,
 				B73744991D0AC6EE0093A137 /* CompanyLoginViewController.swift in Sources */,
 				B7AEE6421CFC3789007C9427 /* ViewController.swift in Sources */,
 				B7AEE65D1CFC503D007C9427 /* ProgramViewController.swift in Sources */,
 				B70AF0011D0ECD2100DFD520 /* CreditsViewController.swift in Sources */,
+				5218D74D1D49D0EB0006502F /* CoreDataHelper.swift in Sources */,
+				5218D7571D49D3EE0006502F /* CompanyDetailsViewController.swift in Sources */,
 				B7AEE6401CFC3789007C9427 /* AppDelegate.swift in Sources */,
 				B7AEE6631CFC5D04007C9427 /* CompaniesTableViewCell.swift in Sources */,
+				5218D76F1D4A08760006502F /* CompanyRegisterDetails+CoreDataProperties.swift in Sources */,
 				B73744951D0AC3780093A137 /* StudentRegisterViewController.swift in Sources */,
 				B70AEFFD1D0EC6AD00DFD520 /* SpeedViewController.swift in Sources */,
 				B73744931D0AC0920093A137 /* StudentLoginViewController.swift in Sources */,
@@ -271,8 +293,10 @@
 				B70AEFF61D0E7E8100DFD520 /* NotesListViewController.swift in Sources */,
 				B737448F1D0AA79A0093A137 /* NotesViewController.swift in Sources */,
 				B7AEE6691CFC634F007C9427 /* StudentViewController.swift in Sources */,
+				5218D76D1D4A08550006502F /* CompanyRegisterDetails.swift in Sources */,
 				B70AEFF81D0E9B5600DFD520 /* WebViewController.swift in Sources */,
 				B7AEE6611CFC5CF3007C9427 /* ProgramsTableViewCell.swift in Sources */,
+				5218D76A1D4A060A0006502F /* CompanyDetails+CoreDataProperties.swift in Sources */,
 				B73744881D0A9C4A0093A137 /* CalenderTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

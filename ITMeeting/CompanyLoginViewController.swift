@@ -122,6 +122,14 @@ class CompanyLoginViewController: UIViewController,UITextFieldDelegate,UIGesture
 
             }
         }
+        else if segue.identifier == "companyreg"
+        {
+            
+            if let destinationVC = segue.destinationViewController as? StudentRegisterViewController
+            {
+                destinationVC.titleStr  = "COMPANY REGISTER"
+            }
+        }
         else
         {
             if let destinationVC = segue.destinationViewController as? ProgramViewController
@@ -137,11 +145,14 @@ class CompanyLoginViewController: UIViewController,UITextFieldDelegate,UIGesture
     
     override func shouldPerformSegueWithIdentifier(identifier: String, sender: AnyObject!) -> Bool
     {
+        if identifier == "calenderreg"
+        {
+        
         if nameTextField.text!.isEmpty
         {
             
             
-            let alertController = UIAlertController(title: "Avvertire.!", message: "Nome utente non deve essere vuoto", preferredStyle: UIAlertControllerStyle.Alert)
+            let alertController = UIAlertController(title: "Alert.!", message: "Name should not be empty.", preferredStyle: UIAlertControllerStyle.Alert)
             alertController.addAction(UIAlertAction(title: "OK", style: .Default, handler: nil))
             self.presentViewController(alertController, animated: true, completion: nil)
 
@@ -154,7 +165,7 @@ class CompanyLoginViewController: UIViewController,UITextFieldDelegate,UIGesture
         {
             
             
-            let alertController = UIAlertController(title: "Avvertire.!", message: "Password non deve essere vuoto", preferredStyle: UIAlertControllerStyle.Alert)
+            let alertController = UIAlertController(title: "Alert.!", message: "Password should not be empty.", preferredStyle: UIAlertControllerStyle.Alert)
             alertController.addAction(UIAlertAction(title: "OK", style: .Default, handler: nil))
             self.presentViewController(alertController, animated: true, completion: nil)
             
@@ -165,11 +176,31 @@ class CompanyLoginViewController: UIViewController,UITextFieldDelegate,UIGesture
         }
 
         
-        else
+       
+        }
+        else if identifier == "calender"
         {
             
+            let coredataObj = CoreDataHelper()
+            
+            let str = coredataObj.fetchCompanyDetails(nameTextField.text!, password: passwordTextField.text!)
+            
+            if str == "no"
+            {
+                let alertController = UIAlertController(title: "Alert.!", message: "Please check user name and password", preferredStyle: UIAlertControllerStyle.Alert)
+                alertController.addAction(UIAlertAction(title: "OK", style: .Default, handler: nil))
+                self.presentViewController(alertController, animated: true, completion: nil)
+                
+                return false
+                
+                
+            }
+            
             return true
+
         }
+        return true
+
     }
     
     /*

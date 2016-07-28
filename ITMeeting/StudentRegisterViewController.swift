@@ -11,10 +11,13 @@ import UIKit
 class StudentRegisterViewController: UIViewController,UITextFieldDelegate,UIGestureRecognizerDelegate
 {
     
+    @IBOutlet weak var registerTitleLabel: UILabel!
+    @IBOutlet weak var password: UITextField!
     @IBOutlet weak var registerTextField: UITextField!
     @IBOutlet var slideMenuView: UIView!
     var  backView : UIView!
     var slectedStr = String()
+    var titleStr = String()
 
 
     override func viewDidLoad()
@@ -25,7 +28,12 @@ class StudentRegisterViewController: UIViewController,UITextFieldDelegate,UIGest
         self.registerTextField.layer.borderWidth = 1.0
         self.registerTextField.layer.cornerRadius = 5
         
-
+        self.password.layer.borderColor = UIColor(red: 19/255, green: 16/255, blue: 130/255, alpha: 1.0).CGColor
+        self.password.layer.borderWidth = 1.0
+        self.password.layer.cornerRadius = 5
+        
+        
+        self.registerTitleLabel.text = titleStr
         // Do any additional setup after loading the view.
     }
 
@@ -112,9 +120,7 @@ class StudentRegisterViewController: UIViewController,UITextFieldDelegate,UIGest
         {
             if let destinationVC = segue.destinationViewController as? ProgramViewController
             {
-//                let prefs = NSUserDefaults.standardUserDefaults()
-//                prefs.setValue(self.registerTextField.text, forKey: "userName")
-//                prefs.synchronize()
+
                 destinationVC.fromStr  = self.slectedStr
                 destinationVC.boolVal = true
 
@@ -125,26 +131,85 @@ class StudentRegisterViewController: UIViewController,UITextFieldDelegate,UIGest
         
     }
     
-    override func shouldPerformSegueWithIdentifier(identifier: String, sender: AnyObject!) -> Bool
+//    override func shouldPerformSegueWithIdentifier(identifier: String, sender: AnyObject!) -> Bool
+//    {
+//        if registerTextField.text!.isEmpty
+//        {
+//            
+//            let alertController = UIAlertController(title: "Alert.!", message: "Name should not be empty.", preferredStyle: UIAlertControllerStyle.Alert)
+//            alertController.addAction(UIAlertAction(title: "OK", style: .Default, handler: nil))
+//            self.presentViewController(alertController, animated: true, completion: nil)
+//            
+//            return false
+//        }
+//        else if password.text!.isEmpty
+//        {
+//            
+//            let alertController = UIAlertController(title: "Avvertire.!", message: "Password should not be empty.", preferredStyle: UIAlertControllerStyle.Alert)
+//            alertController.addAction(UIAlertAction(title: "OK", style: .Default, handler: nil))
+//            self.presentViewController(alertController, animated: true, completion: nil)
+//            
+//            return false
+//        }
+//
+//            
+//        else
+//        {
+//            
+//            return true
+//        }
+//    }
+
+    @IBAction func registerButtonAction(sender: AnyObject)
     {
+        
+        
+        
+        
         if registerTextField.text!.isEmpty
         {
             
-            let alertController = UIAlertController(title: "Avvertire.!", message: "Nome utente non deve essere vuoto", preferredStyle: UIAlertControllerStyle.Alert)
+            let alertController = UIAlertController(title: "Alert.!", message: "Name should not be empty.", preferredStyle: UIAlertControllerStyle.Alert)
             alertController.addAction(UIAlertAction(title: "OK", style: .Default, handler: nil))
             self.presentViewController(alertController, animated: true, completion: nil)
             
-            return false
+           // return false
+        }
+        else if password.text!.isEmpty
+        {
+            
+            let alertController = UIAlertController(title: "Alert.!", message: "Password should not be empty.", preferredStyle: UIAlertControllerStyle.Alert)
+            alertController.addAction(UIAlertAction(title: "OK", style: .Default, handler: nil))
+            self.presentViewController(alertController, animated: true, completion: nil)
+            
+            //return false
         }
             
             
         else
         {
+//             let destinationVC =  CompanyDetailsViewController()
+//            self.navigationController?.pushViewController(destinationVC, animated: true)
             
-            return true
-        }
-    }
+            
+            let coredataObj = CoreDataHelper()
+            
+            let boolVal = coredataObj.saveCompanyRegisterDetails(registerTextField.text!, password: password.text!)
+            
+            if  boolVal==true
+            {
+                let detail = self.storyboard?.instantiateViewControllerWithIdentifier("CompanyDetailsViewController") as! CompanyDetailsViewController
+                detail.titleStr=registerTextField.text!
+                self.navigationController?.pushViewController(detail, animated: true)
+            }
+          
 
+           // return true
+        }
+
+        
+        
+    }
 
     /*
     // MARK: - Navigation
